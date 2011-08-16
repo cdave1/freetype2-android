@@ -11,7 +11,7 @@ LOCAL_CFLAGS := -DANDROID_NDK \
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include_all \
 		$(FREETYPE_SRC_PATH)include \
-			$(FREETYPE_SRC_PATH)src
+		$(FREETYPE_SRC_PATH)src
 
 LOCAL_SRC_FILES := \
 	$(FREETYPE_SRC_PATH)src/autofit/autofit.c \
@@ -36,7 +36,6 @@ LOCAL_SRC_FILES := \
 	$(FREETYPE_SRC_PATH)src/smooth/smooth.c \
 	$(FREETYPE_SRC_PATH)src/truetype/truetype.c
 
-#LOCAL_CFLAGS := -Wall -pedantic -std=c99 -g
 LOCAL_LDLIBS := -ldl -llog
 
 include $(BUILD_STATIC_LIBRARY)
