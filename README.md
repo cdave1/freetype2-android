@@ -13,7 +13,12 @@ There is an analogous library for Xcode and iOS [here](https://github.com/cdave1
 
 This distribution requires release 5 of the Android Native Development Kit.
 
-To install cd to the Android/jni/ directory and type ndk-build.
+To build, cd to the Android/jni/ directory and type ndk-build.
+
+The file Android/jni/Application.mk contains the target and platform settings for the building.  The current build settings are:
+
+    	 APP_ABI := armeabi armeabi-v7a
+	 APP_PLATFORM := android-8
 
 To use the library in another ndk library, you will need to include the Android/jni/module.mk file in the Android.mk of the library you want to use freetype with.
 
